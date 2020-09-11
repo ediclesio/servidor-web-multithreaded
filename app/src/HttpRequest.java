@@ -128,6 +128,3 @@ public final class HttpRequest implements Runnable{
 		return "application/octet-stream";
 	}
 }
-
-// http://www.univasf.edu.br/~edmar.nascimento/redes/WebServerEsboco.java
-// https://www.ccs.neu.edu/home/rraj/Courses/U640/F04/Programs/WebServer.java
