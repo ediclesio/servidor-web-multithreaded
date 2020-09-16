@@ -12,7 +12,7 @@ public final class WebServer {
 		while (true) {
 			//Construir um objeto para processar a mensagem de requisição HTTP.
 			Socket socket = server.accept();
-			HttpRequest request = new HttpRequest (socket);
+			HttpRequest request = new HttpRequest(socket);
 			// Criar um novo thread para processar a requisição.
 			Thread thread = new Thread(request);
 			//Iniciar o thread.

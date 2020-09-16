@@ -27,13 +27,13 @@ public final class HttpRequest implements Runnable{
 		// Obter uma referência para os trechos de entrada e saída do socket.
 		InputStream is = socket.getInputStream();
 		DataOutputStream os = new DataOutputStream(socket.getOutputStream());
+		
 		// Ajustar os filtros do trecho de entrada.
-		//?
-		InputStreamReader inr = new InputStreamReader(is);
-		BufferedReader br = new BufferedReader(inr);
-		// ...
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+		
 		// Obter a linha de requisição da mensagem de requisição HTTP.
 		String requestLine = br.readLine();
+		
 		// Exibir a linha de requisição.
 		System.out.println();
 		System.out.println(requestLine);
